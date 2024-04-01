@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  proxy:
+    build:
+      context: ./
+    ports:
+      - "8800:80"
+    environment:
+      TZ: UTC
