@@ -1,4 +1,4 @@
-#### How to use  MigratoryData Java Client API with Http forwarding proxy
+#### How to use  MigratoryData Java Client API with Http forward proxy
 
 ##### Prerequisites
 Java Development Kit (JDK) 8+, Gradle 6+, Docker 
@@ -6,7 +6,9 @@ Java Development Kit (JDK) 8+, Gradle 6+, Docker
 #### Clone Project
 
 Clone the getting started project from GitHub using your IDE of choice or using the following command:
-> git clone https://github.com/migratorydata/getting-started-forwarding-proxy-java.git
+```bash
+git clone https://github.com/migratorydata/getting-started-forwarding-proxy-java.git
+```
 
 In directory `proxies/nginx-proxy` you will find the configuration files for the Nginx proxy server. To run the demo proxy server, you need to have Docker installed on your machine.
 
