@@ -34,7 +34,23 @@ public class Main {
 
         });
 
+        // Set client with nginx proxy (see dir proxies/nginx-proxy)
         client.setProxy(MigratoryDataProxyHandler.createHttpProxyHandler("127.0.0.1", 8800, null, null, null));
+
+
+        // Set MigratoryData client with squid proxy and authentication (see dir proxies/squid-proxy)
+        // client.setProxy(MigratoryDataProxyHandler.createHttpProxyHandler("127.0.0.1", 3128, "foo", "boo", null));        
+
+        // Set client with socks proxy (see dir proxies/socks-proxy)
+        // client.setProxy(MigratoryDataProxyHandler.createSocksProxyHandler("127.0.0.1", 1080, null));
+
+        // Set client with socks proxy and authentication (see dir proxies/socks-proxy)
+        // client.setProxy(MigratoryDataProxyHandler.createSocksProxyHandler("127.0.0.1", 1080, new Authenticator() {
+        //     protected PasswordAuthentication getPasswordAuthentication() {
+        //         return new PasswordAuthentication("foo", "boo".toCharArray()); 
+        //     }
+        // }));
+        
 
         client.setEncryption(true);
 
