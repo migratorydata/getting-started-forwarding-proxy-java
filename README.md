@@ -1,5 +1,7 @@
 #### How to use  MigratoryData Java Client API with Http forward proxy
 
+> Works with Client Java API v5
+
 ##### Prerequisites
 Java Development Kit (JDK) 8+, Gradle 6+, Docker 
 
